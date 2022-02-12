@@ -28,7 +28,7 @@ spec:
       enabled: true
       type: LoadBalancer
       spec:
-        loadBalancerIP: "${METALLB_TRAEFIK_ADDR}"
+        loadBalancerIP: "${TRAEFIK_IP}"
         externalTrafficPolicy: Local
     logs:
       general:
