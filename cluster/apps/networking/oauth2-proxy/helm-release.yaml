@@ -29,7 +29,7 @@ spec:
       cookieSecret: ${OAUTH2_PROXY_COOKIE_SECRET}
     ingress:
       enabled: true
-      className: nginx
+      ingressClassName: nginx
       path: /oauth2
       pathType: Prefix
       annotations:
