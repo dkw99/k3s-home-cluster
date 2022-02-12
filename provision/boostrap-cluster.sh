@@ -88,7 +88,7 @@ installFlux() {
     cd ${REPO_ROOT}
     . $REPO_ROOT/.config.env
     info "Sleeping for 10s to give cluster time to settle"
-    sleep 10
+
     info "Setting up environment variables"
     info "Using kubeconfig: ${KUBECONFIG}"
     info "Installing flux..."
