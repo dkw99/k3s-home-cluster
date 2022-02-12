@@ -4,7 +4,7 @@
 .DS_Store
 Thumbs.db
 # k8s
-kubeconfig
+kubeconfig*
 # vscode-sops
 .decrypted~*.yaml
 .config.env
@@ -15,3 +15,4 @@ xanmanning.k3s*
 .terraform
 .terraform.tfstate*
 terraform.tfstate*
+provision/bootstrap-cluster.sh

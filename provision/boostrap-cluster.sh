@@ -120,8 +120,8 @@ installFlux() {
 }
 # Start Main Script here
 
-# k3sMasterNode
-  installFlux
+  k3sMasterNode
+#  installFlux
 # ks3amd64WorkerNodes
 # ks3armWorkerNodes
 
