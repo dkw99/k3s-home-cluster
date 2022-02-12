@@ -46,6 +46,6 @@ spec:
       oidc-issuer-url: https://dex.${SECRET_DOMAIN}
       skip-provider-button:
       pass-authorization-header:
-      email-SECRET_DOMAIN: "*"
-      cookie-SECRET_DOMAIN: .${SECRET_DOMAIN}
-      whitelist-SECRET_DOMAIN: .${SECRET_DOMAIN}
+      email-domain: "*"
+      cookie-domain: .${SECRET_DOMAIN}
+      whitelist-domain: .${SECRET_DOMAIN}
