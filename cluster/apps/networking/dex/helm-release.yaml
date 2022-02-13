@@ -59,7 +59,7 @@ spec:
         #   id: google
         #   name: Google
         #   config:
-        #     issuer: https://accounts.google.com
+        #  issuer: https://accounts.google.com
         #     clientID: ${DEX_GOOGLE_CLIENT_ID}
         #     clientSecret: ${DEX_GOOGLE_CLIENT_SECRET}
         #     redirectURI: https://dex.${SECRET_DOMAIN}/callback
@@ -75,14 +75,14 @@ spec:
         #   redirectURIs:
         #     - https://k10.${SECRET_DOMAIN}/k10/auth-svc/v0/oidc/redirect
       storage:
-        type: kubernetes
+        type: sqlite3
         config:
-          inCluster: true
+          file: /var/dex/dex.db
       frontend:
         theme: coreos
         issuer: Wisesalmon
         issuerUrl: https://${SECRET_DOMAIN}
-        logoUrl: https://imgur.com/Idzzln9.png
+        # logoUrl: https://imgur.com/Idzzln9.png
       expiry:
         signingKeys: 6h
         idTokens: 24h
